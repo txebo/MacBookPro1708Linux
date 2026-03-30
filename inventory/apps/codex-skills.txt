@@ -1,0 +1,7 @@
+.system
+.system/.codex-system-skills.marker
+.system/imagegen
+.system/openai-docs
+.system/plugin-creator
+.system/skill-creator
+.system/skill-installer

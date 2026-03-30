@@ -1,0 +1,6 @@
+{
+    "window.newWindowProfile": "Default",
+    "python.defaultInterpreterPath": "/usr/bin/python",
+    "terminal.integrated.stickyScroll.enabled": false,
+    "git.enableSmartCommit": true
+}

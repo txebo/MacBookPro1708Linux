@@ -1,0 +1,17 @@
+codexbuild.codex-build@0.5.7
+eamodio.gitlens@17.11.1
+github.codespaces@1.18.11
+github.copilot-chat@0.41.2
+github.vscode-github-actions@0.31.2
+ms-azuretools.vscode-containers@2.4.1
+ms-azuretools.vscode-docker@2.0.0
+ms-python.debugpy@2025.18.0
+ms-python.python@2026.4.0
+ms-python.vscode-pylance@2026.1.1
+ms-python.vscode-python-envs@1.24.0
+ms-vscode.cmake-tools@1.22.28
+ms-vscode.cpp-devtools@0.4.6
+ms-vscode.cpptools-extension-pack@1.5.1
+ms-vscode.cpptools-themes@2.0.0
+ms-vscode.cpptools@1.31.3
+openai.chatgpt@26.325.31654

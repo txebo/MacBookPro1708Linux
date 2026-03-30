@@ -14,6 +14,7 @@ Incluye:
 - firmware necesario para camara y Bluetooth
 - copias de las fuentes exactas usadas para compilar
 - referencias a upstream, commits y checksums
+- inventario de apps instaladas y configuracion exportada de VS Code y Codex
 - un script para instalar todo
 - un script para recompilar al cambiar de kernel o distro
 
@@ -23,6 +24,7 @@ Incluye:
 - `artifacts/firmware/`: firmware de camara y Bluetooth
 - `sources/`: snapshots `.tar.gz` de todo el codigo fuente relevante
 - `references/`: origenes, estado de la maquina y checksums
+- `inventory/`: inventario de apps y configuracion exportada
 - `install-all-drivers.sh`: instala modulos y firmware
 - `rebuild-all-drivers.sh`: recompila para otro kernel
 
@@ -87,3 +89,21 @@ Para verificarlos desde la raiz del repo:
 ```bash
 sha256sum -c references/CHECKSUMS.sha256
 ```
+
+## Inventario y configuracion
+
+Dentro de `inventory/` quedan:
+
+- `apps/apt-installed.tsv`: todos los paquetes instalados por `dpkg`
+- `apps/apt-manual.txt`: paquetes marcados como manuales
+- `apps/flatpak-apps.tsv`: apps Flatpak instaladas
+- `apps/snap-apps.txt`: inventario Snap
+- `apps/vscode-version.txt`: version instalada de VS Code
+- `apps/vscode-extensions.txt`: extensiones instaladas de VS Code
+- `apps/codex-version.txt`: version instalada de Codex CLI
+- `apps/codex-skills.txt`: skills visibles en Codex
+- `apps/codex-plugins.txt`: plugins visibles en Codex
+- `config/vscode/`: `settings.json`, `mcp.json` y `chatLanguageModels.json`
+- `config/codex/`: `config.toml` y `default.rules`
+
+No se incluyen secretos ni estado sensible como `auth.json`, sesiones, caches, logs o `globalStorage`.
